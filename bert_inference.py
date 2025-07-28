@@ -15,8 +15,8 @@ LABELS = ['title', 'h1', 'h2', 'h3', 'other']
 
 # Load trained model and tokenizer
 print("Loading BERT model...")
-model = BertForSequenceClassification.from_pretrained('./saved/bert_heading_model')
-tokenizer = BertTokenizer.from_pretrained('./saved/bert_heading_model')
+model = BertForSequenceClassification.from_pretrained('Priyanshu958/bert-heading-extractor')
+tokenizer = BertTokenizer.from_pretrained('Priyanshu958/bert-heading-extractor')
 model.eval()
 model.to(DEVICE)
 
